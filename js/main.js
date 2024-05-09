@@ -7,6 +7,7 @@ let op = '';
 addNumber();
 storeVariables();
 equals();
+canc();
 
 function addNumber(){
 
@@ -46,36 +47,47 @@ function equals(){
 
     equals.addEventListener('click', function(){
 
-        let num2 = document.getElementById('display').value;
+        let num2 = document.getElementById('display').innerHTML;
 
         num2 = parseInt(num2);
 
         switch(op){
             case '+':
                 num += num2;
-                document.getElementById('display').value = num;
+                document.getElementById('display').innerHTML = num;
                 break;
             case '-':
                 num -= num2;
-                document.getElementById('display').value = num;
+                document.getElementById('display').innerHTML = num;
                 break;
             case '*':
                 num = num * num2;
-                document.getElementById('display').value = num;
+                document.getElementById('display').innerHTML = num;
                 break;
             case '/':
                 if(num2 == 0){
-                    document.getElementById('display').value = 'Error!!!';
+                    document.getElementById('display').innerHTML = 'Error!!!';
                     num = 0;
                     op = '';
                     setTimeout(() => {
-                        document.getElementById('display').value = '';
+                        document.getElementById('display').innerHTML = '';
                     }, 2000);
                     break
                 }
                 num = num / num2;
-                document.getElementById('display').value = num;
+                document.getElementById('display').innerHTML = num;
                 break;
         }
     })
-}   
+}
+
+function canc(){
+    const canc = document.querySelector('.ce');
+
+    canc.addEventListener('click', function(){
+        num = 0;
+        op = '';
+
+        document.getElementById('display').innerHTML = '';
+    })
+}
