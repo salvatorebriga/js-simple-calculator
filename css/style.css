@@ -1,0 +1,110 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: blue;
+    color: white;
+    height: 100px;
+    padding: 40px;
+
+}
+
+.necktie{
+    max-width: 20%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.container{
+    border-radius: 2%;
+    background-color: #d0d0d0;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+    font-size: 50px;
+}
+
+.number{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: black;
+    color: green;
+    height: 100px;
+    padding: 20px;
+    font-size: 75px;
+    
+}
+
+.container-flex{
+    display: flex;
+}
+
+.bt-number{
+    display: flex;
+    flex-wrap: wrap;
+    width: 74%;
+    padding: 10px;
+}
+
+.bt-op{
+    width: 20%;
+}
+
+.buttons{
+    margin: 5px;
+    border: none;
+    border-radius: 5%;
+    font-size: 40px;
+    background-color: #bbbbbb;
+    box-shadow: -2px 2px 1px gray;
+}
+
+.bt-size{
+    height: 75px;
+    width: 75px;
+}
+
+.bt-size-big{
+    height: 75px;
+    width: 160px;
+}
+
+.bt-size-small{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    width: 75px;
+    height: 50px;
+    font-size: 25px;
+}
+
+.bt-conf{
+    font-size: 25px;
+}
+
+.white-font{
+    color: white;
+}
+
+.bg-orange{
+    background-color: #ff9f0a;
+}
+
+.bg-blue{
+    background-color: #77a8b0;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Seven Segment, sans-serif;
+}
