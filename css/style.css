@@ -1,3 +1,10 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Seven Segment, sans-serif;
+}
+
 header{
     display: flex;
     align-items: center;
@@ -100,11 +107,4 @@ header{
 
 .bg-blue{
     background-color: #77a8b0;
-}
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Seven Segment, sans-serif;
 }
